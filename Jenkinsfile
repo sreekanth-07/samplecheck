@@ -27,12 +27,12 @@ stage("git-push") {
 		     
 		     git clone https://github.com/sreekanth-07/samplecheck.git 
 		     git branch -a
-		     git checkout test
+		     git checkout test01
 	             git status
 	             git add .
                      git commit -m "update changes"
 		     
-		     git push https://github.com/sreekanth-07/samplecheck.git test
+		     git push https://github.com/sreekanth-07/samplecheck.git test01
 		     
 	           '''
 		   }
