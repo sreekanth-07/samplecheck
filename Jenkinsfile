@@ -32,7 +32,7 @@ stage("git-push") {
 	             git add .
                      git commit -m "update changes"
 		     
-		     git push https://github.com/sreekanth-07/samplecheck.git 
+		     git push https://github.com/sreekanth-07/samplecheck.git main
 		     
 	           '''
 		   }
