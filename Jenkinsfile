@@ -22,6 +22,7 @@ stage("git-push") {
 		     
 		     git config --global user.email "kallepusreekanth7@gmail.com"
                      git config --global user.name "sreekanth-07"
+		     git config --global user.password "K.sreekanth@0585"
 		     git branch -a
 		     git checkout test
 	             git status
