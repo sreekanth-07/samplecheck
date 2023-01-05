@@ -25,7 +25,7 @@ stage("git-push") {
                      // git config --global user.name "sreekanth-07"
 		     // https://sreekanth-07:K.chinna@0585@github.com/path/to/https://github.com/sreekanth-07/pmd.git
 		     
-		     git clone https://github.com/sreekanth-07/samplecheck.git 
+		     //git clone https://github.com/sreekanth-07/samplecheck.git 
 		     git branch -a
 		     git checkout test01
 	             git status
