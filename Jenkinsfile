@@ -11,6 +11,7 @@ pipeline {
       stage('git-push') {
             steps {
 	          bat'''
+		    git clone https://github.com/sreekanth-07/samplecheck.git
                     cd C:\\Users\\002XJB744\\Documents\\check
                     ls
                     git init
