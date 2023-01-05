@@ -14,6 +14,7 @@ pipeline {
        stage("git-push") {
             steps {
 	          bat'''
+		   touch abc
 	           git branch -a
 	           git status
 	           git add .
