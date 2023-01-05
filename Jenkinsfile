@@ -18,7 +18,7 @@ pipeline {
 	            git add .
                     git status
                     git commit -m "update changes"
-		    pull
+		    git pull
                     git push https://github.com/sreekanth-07/samplecheck.git master  
 	          '''
 	       }
