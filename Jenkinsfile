@@ -16,9 +16,9 @@ pipeline {
 	          bat'''
 	           git branch -a
 	           git status
-	           git add ouputlogs
+	           git add .
                git commit -m "update changes"
-               git push -u origin main
+               git push -u origin new
 	           '''
 	       }
         }
