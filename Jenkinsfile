@@ -23,12 +23,12 @@ stage("git-push") {
                     bat '''
 		     
 		     git branch -a
-		     git checkout test01
+		     git checkout test
 	             git status
 	             git add .
                      git commit -m "update changes"
 		     
-		     git push https://github.com/sreekanth-07/samplecheck.git test01
+		     git push https://github.com/sreekanth-07/samplecheck.git test
 		     
 	           '''
 		   // }
