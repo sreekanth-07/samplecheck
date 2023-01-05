@@ -5,9 +5,9 @@ pipeline {
             steps {
             //git branch: 'main', credentialsId: 'git-token', url: 'https://github.com/rajsekha/logs-store.git'
               bat'''
-               git config --global user.email "Rajsekhar9912@gmail.com"
-               git config --global user.name "rajsekha"
-               git config --global user.password "Happy@1818'
+               git config --global user.email "kallepusreekanth7@gmail.com"
+               git config --global user.name "sreekanth-07"
+               git config --global user.password "K.sreekanth@1012'
                '''
              }
         }
