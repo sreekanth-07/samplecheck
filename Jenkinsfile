@@ -17,10 +17,8 @@ pipeline {
     }
 stage("git-push") {
                steps {
-	       		// withCredentials([gitUsernamePassword(credentialsId: 'git_token', gitToolName: 'Default')]) {
-		       // withCredentials([string(credentialsId: 'finegit-token', variable: 'token')]) {
-           
-                    bat '''
+	       		
+                     bat '''
 		     
 		     git config --global user.email "kallepusreekanth7@gmail.com"
                      git config --global user.name "sreekanth-07"
@@ -33,7 +31,7 @@ stage("git-push") {
 		     git push https://github.com/sreekanth-07/samplecheck.git test
 		     
 	           '''
-		   // }
+		   
 		 }
            }
   }
