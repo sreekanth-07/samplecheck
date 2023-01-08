@@ -8,20 +8,26 @@ pipeline {
 //          '''
 //           }
 //      }
-      stage('git-push') {
-            steps {
-	          bat'''
-		    cd C:\\Users\\002XJB744\\Documents\\check
-		    // git clone https://github.com/sreekanth-07/samplecheck.git
-	            git branch -a
-	            git status
-	            git add .
-                    git status
-                    git commit -m "update changes"
-		    git pull
-                    git push https://github.com/sreekanth-07/samplecheck.git master  
-	          '''
-	       }
+      stage("git-push") {
+               steps {
+	       		withCredentials([gitUsernamePassword(credentialsId: 'git-token', gitToolName: 'Default')]) {
+           
+                    sh '''
+		             git config --global user.email "kallepusreekanth7@gmail.com"
+                             git config --global user.name "sreekanthtsb"
+		     
+			     cd C:\\Users\\002XJB744\\Documents\\check
+		             git branch -a
+		             # git checkout feature/mobileautomation
+			     git add .
+			     git status
+	                     # git add deploy-pipeline/GalaxyS10.properties
+                             git commit -m "update changes"
+		     
+		            git push -u origin master
+		     
+	               '''
+		   }
         }
     
   }
