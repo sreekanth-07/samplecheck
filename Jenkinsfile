@@ -18,12 +18,12 @@ pipeline {
 		     
 			     cd C:\\Users\\002XJB744\\Documents\\check
 		             git branch -a
-		             # git checkout feature/mobileautomation
+		            
 			     git add .
 			     git status
-	                     # git add deploy-pipeline/GalaxyS10.properties
+	                    
                              git commit -m "update changes"
-		     
+		             git pull
 		            git push -u origin master
 		     
 	               '''
