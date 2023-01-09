@@ -15,7 +15,7 @@ pipeline {
             steps {
 	         bat'''
 		    cd C:\\Users\\002XJB744\\Documents\\check
-		    // git clone https://github.com/sreekanth-07/samplecheck.git
+		    
 	            git branch -a
 	            git status
 	            git add .
