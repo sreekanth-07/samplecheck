@@ -22,7 +22,7 @@ pipeline {
                     git status
                     git commit -m "update changes"
 		    git pull
-                    git push origin master
+                    git push https://github.com/sreekanth-07/samplecheck.git master
 	            '''
 	       }
         }
