@@ -13,10 +13,7 @@ pipeline {
 //         }
        stage("git-push") {
             steps {
-	          bat'''
-		   stage('git-push') {
-            steps {
-	          bat'''
+	         bat'''
 		    cd C:\\Users\\002XJB744\\Documents\\check
 		    // git clone https://github.com/sreekanth-07/samplecheck.git
 	            git branch -a
