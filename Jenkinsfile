@@ -26,9 +26,7 @@ pipeline {
                     git commit -m "update changes"
 		    git pull
                     git push https://github.com/sreekanth-07/samplecheck.git main 
-	          '''
-	       }
-	           '''
+	            '''
 	       }
         }
   }
