@@ -22,7 +22,7 @@ pipeline {
                     git status
                     git commit -m "update changes"
 		    git pull
-                    git push origin main 
+                    git push origin master
 	            '''
 	       }
         }
