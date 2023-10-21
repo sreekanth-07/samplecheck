@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Clones the repository to the workspace
-                    git url: 'https://github.com/your-username/your-repo.git'
+                    git url: 'https://github.com/sreekanth-07/samplecheck.git'
                 }
             }
         }
@@ -14,7 +14,9 @@ pipeline {
             steps {
                 script {
                     // Read the content of the file
-                    def fileContent = readFile 'path_to_your_file_in_repo/file_name.txt'
+                    sh "pwd"
+                    def fileContent = readFile './chchch.txt'
+                    sh "pwd"
                     // Print the content
                     echo fileContent
                 }
